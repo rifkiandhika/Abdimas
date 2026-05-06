@@ -71,7 +71,7 @@ class SensorDataController extends Controller
             'data'    => $data,
         ]);
     }
-
+    
     public function latest(Request $request): JsonResponse
     {
         $deviceId = $request->query('device_id', 'esp32-flame-01');
